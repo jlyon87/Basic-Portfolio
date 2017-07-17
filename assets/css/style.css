@@ -24,22 +24,12 @@ footer {
 	padding: 1rem;
 }
 
-img {
-	float: left;
-	padding-right: 1rem;
-	max-height: 200px;
-}
-
 h1, h2, h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 h2, h3 {
 	color: #4aaaa5;
-}
-
-a img.link-icon {
-	width: 20%;
 }
 
 nav.links {
@@ -57,21 +47,14 @@ nav.links {
 	border-right: none;
 }
 
-div.links ul {
-
-	list-style-type: none;
-	margin: 2rem 0 0 0;
-	padding: 0;
+img.profile-pic {
+	float: left;
+	padding-right: 1rem;
+	max-height: 200px;
 }
 
-div.links ul li {
-	display: inline;
-	padding: 0 1rem 0 1rem;
-	border-right: 1px solid #555;
-}
-
-div.links ul li:last-child {
-	border-right: none;
+img.link-icon {
+	width: 20%;
 }
 
 /* Set's container width relative to viewport and centers */
@@ -99,11 +82,11 @@ div.links ul li:last-child {
 }
 
 /* Each box gets color, border, float left and some basic margin/padding */
-.box {
+.header-name {
 	float: left;
 }
 
-.p-around-small {
+.around-small {
 	margin: 1rem;
 	padding: 1rem;
 }
