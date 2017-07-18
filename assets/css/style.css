@@ -23,6 +23,7 @@ footer {
 	position: fixed;
 	bottom: 0px;
 	padding: 1rem;
+	z-index: 10;
 }
 
 h1, h2, h3 {
@@ -103,9 +104,10 @@ div.form-control div {
 
 /* Set's container width relative to viewport and centers */
 .container {
+	position: relative;
 	width: 960px;
 	margin: 0 auto;
-	min-height: 100%;
+	height: 100%;
 }
 
 .content {
@@ -118,7 +120,47 @@ div.form-control div {
 	width: 30%;
 }
 
+.portfolio-grid {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.portfolio-grid:after {
+	content: "";
+	display: block;
+	clear:both;
+}
+
+.portfolio-card {
+	float: left;
+	width: 40%;
+	margin: .5rem;
+	padding: 0;
+	position: relative;
+}
+
+img.card-image {
+	width: 100%;
+  z-index: 1;
+}
+
+div.card-title {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;
+	text-align: center;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding: .5rem 0 .5rem 0;
+	margin-bottom: .7rem;
+}
+
 /* Each Row `clears` the float left properties so we can begin a new line/row */
+.row {
+	width: 100%;
+}
+
 .row:after {
 	content: "";
 	display: block;
